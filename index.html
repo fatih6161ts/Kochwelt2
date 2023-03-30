@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .bg1 {
+            padding-left: 140px;
+            padding-right: 140px;
+            padding-top: 32px;
+            padding-bottom: 32px;
+            background-color: #faf8f8;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+
+        }
+
+        .bg1-inner {
+            display: flex;
+            justify-content: center;
+            width: 90%;
+
+        }
+
+        .inner-r {
+            padding-left: 100px;
+            padding-right: 100px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            height: 85%;
+            font-size: large;
+        }
+
+        .button {
+            width: 200px;
+            padding: 8px 8px 8px;
+            color: #faf8f8;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            border: none;
+            background-color: #008000;
+            transition: all ease-in-out 0.2s;
+        }
+
+        .button:hover {
+            background-color: #004b00;
+            cursor: pointer;
+        }
+
+        .bg1 img {
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .bg2 {
+            padding-left: 140px;
+            padding-right: 140px;
+            padding-top: 32px;
+            padding-bottom: 32px;
+            background-color: #eeebeb;
+            height: 300px;
+
+
+        }
+
+        .bg2 h2 {
+            text-align: center;
+
+        }
+
+        .bg2_inner {
+            display: flex;
+            justify-content: space-between;
+            padding: 32px;
+
+        }
+
+        .bg2_inner p {
+            text-align: center;
+        }
+
+        .bg2_inner img {
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: all ease-in-out 0.2s;
+        }
+
+        .bg2_inner img:hover {
+            cursor: pointer;
+            transform: scale(1.1);
+
+        }
+
+        .bg3 {
+            padding-left: 140px;
+            padding-right: 140px;
+            padding-top: 32px;
+            padding-bottom: 32px;
+            background-color: #faf8f8;
+            height: 300px;
+
+
+        }
+
+        .bg3-inner {
+            display: flex;
+            justify-content: center;
+            flex-direction: row-reverse;
+            padding-top: 32px;
+            width: 90%;
+
+        }
+
+        .inner-2r {
+            padding-left: 100px;
+            padding-right: 50px;
+            height: 85%;
+            font-size: large;
+        }
+
+        .bg3 img {
+            height: 200px;
+            width: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: all ease-in-out 0.2s;
+        }
+
+        .bg3 img:hover {
+            cursor: pointer;
+            transform: scale(1.1);
+        }
+
+        .bg3 h2 {
+            text-align: center;
+        }
+
+        @media (max-width: 1070px) {
+            .bg1 {
+                height: 600px;
+            }
+
+            .bg1-inner {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .bg1-inner {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 400px;
+            }
+
+            .inner-r {
+                padding: 0;
+                display: flex;
+                align-items: center;
+                text-align: center;
+            }
+
+            .bg2 {
+                height: 700px;
+            }
+
+            .bg2_inner {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                padding: 32px;
+            }
+
+            .bg2 p {
+                margin-top: 3px;
+            }
+
+            .bg3 {
+                height: 500px;
+                padding-left: 8px;
+                padding-right: 8px;
+            }
+
+            .bg3 h2 {
+                padding-left: 16px;
+                padding-right: 16px;
+            }
+
+            .bg3-inner {
+                display: flex;
+                flex-direction: column-reverse;
+                align-items: center;
+                width: 100%;
+            }
+
+            .inner-2r {
+                padding-bottom: 16px;
+                padding-left: 50px;
+                padding-right: 50px;
+            }
+        }
+
+        @media (max-width: 400px) {
+            .bg1 img {
+                height: 200px;
+            }
+
+            .bg3 {
+                height: 600px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg1">
+        <div class="bg1-inner">
+            <div class="inner-l">
+                <img src="img/croissant.jpg">
+            </div>
+            <div class="inner-r">
+                <h2>Französische Croissants</h2>
+                <p>Schmackhafte Croissants kännen auch zu Hause sehr einfach gebacken werden. Mit ca 30. Minuten Aufwand
+                    kannst du ein wundervolles Frühstück zaubern.</p>
+                <a href="#" class="button">Rezept Öffnen</a>
+            </div>
+        </div>
+
+    </div>
+    <div class="bg2">
+        <h2>Lust auf was Neues?</h2>
+        <div class="bg2_inner">
+            <div class="1">
+                <a href="#"><img src="img/croissant.jpg"></a>
+                <p>Frische Croissants</p>
+            </div>
+            <div class="2">
+                <a href="#"><img src="img/croissant.jpg"></a>
+                <p>Frische Croissants</p>
+            </div>
+            <div class="3">
+                <a href="#"><img src="img/croissant.jpg"></a>
+                <p>Frische Croissants</p>
+            </div>
+        </div>
+    </div>
+    <div class="bg3">
+        <h2>Pfanne vs. Wok - Was ist besser?</h2>
+        <div class="bg3-inner">
+            <div class="inner-2l">
+                <a href="#"><img src="img/wok.jpg"></a>
+            </div>
+            <div class="inner-2r">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam quis perferendis aspernatur
+                    laudantium eum sequi, saepe, id excepturi amet commodi tenetur modi maiores, culpa minima? Explicabo
+                    cumque sunt esse non?</p>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
