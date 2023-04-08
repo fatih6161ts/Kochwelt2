@@ -1,0 +1,210 @@
+body {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+.main {
+    width: 80%;
+    padding-left: 150px;
+}
+
+.headline {
+    width: 100%;
+
+}
+
+.headline img {
+    border-radius: 10px;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+h1 {
+    padding: 2px;
+    margin-bottom: 20px;
+    font-size: 35px;
+}
+
+.icons-main {
+    display: flex;
+    gap: 25px;
+    margin-top: 25px;
+}
+
+.icon-sub {
+    height: 20px;
+    background-color: rgb(238, 235, 235);
+    border-radius: 10px;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+}
+
+.icon-sub img {
+    height: 20px;
+    width: 20px;
+    object-fit: cover;
+}
+
+.vertical-line {
+    width: 100%;
+    height: 2px;
+    margin-top: 90px;
+    background-color: rgb(238, 235, 235);
+}
+
+.ingridients {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+
+}
+
+.ingridients input {
+    height: 36px;
+    font-size: 17px;
+}
+
+.button {
+    height: 42px;
+    width: 200px;
+    padding: 8px 8px 8px;
+    color: #faf8f8;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    background-color: #008000;
+    transition: all ease-in-out 0.2s;
+}
+
+.button:hover {
+    background-color: #004b00;
+    cursor: pointer;
+}
+
+table {
+    display: inline-grid;
+    width: 100%;
+    margin-top: 25px;
+    border-radius: 10px;
+}
+
+table body {
+    width: 100%;
+    display: inline-grid;
+}
+
+table tr {
+    padding: 15px;
+    display: block;
+}
+
+table tr:nth-child(odd) {
+    background-color: rgb(238, 235, 235);
+    border-radius: 10px;
+}
+
+h3 {
+    font-size: 25px;
+}
+
+.nutrition {
+    font-size: 17px;
+}
+
+p {
+    margin-top: 25px;
+}
+
+h4 {
+    margin-top: 45px;
+    font-size: 20px;
+}
+
+.author {
+    display: flex;
+    font-weight: bold;
+    align-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 30px;
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+
+.author img {
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+@media (max-width:800px) {
+    .main {
+        width: 65%;
+        padding-left: 90px;
+    }
+
+}
+
+@media(max-width:500px) {
+
+    .main{
+        font-size: 12px;
+        padding-left: 65px;
+    }
+    h1 {
+        font-size: 23px;
+    }
+
+    .icons-main {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .ingridients {
+        width: 80%;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+        padding-left: 25px;
+    }
+
+    .ingridients input {
+        font-size: 12px;
+    }
+
+    table tr {
+        padding: 8px;
+        display: block;
+    }
+
+
+    tbody {
+        width: 80%;
+        display: inline-grid;
+    }
+
+    td {
+        width: 80%;
+    }
+
+    table tr:nth-child(odd) {
+        width: 80%;
+    }
+
+    table tr:nth-child(even) {
+        width: 80%;
+    }
+
+    .nutrition {
+        font-size: 13px;
+    }
+
+
+}
