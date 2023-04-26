@@ -1,165 +1,278 @@
-.kontakt {
-    body{
-        margin:0; 
-        font-family: 'Raleway',sans-serif;     
-    }
-    
-    h1{
-        font-size: 65px;
-        font-weight: bold;
-        color:white;
-    }
-    
-    h3{
-        font-size: 30px;
-        text-align: center;
-        color: black;
-    }
-    
-    .main-box{
-        height:120vh;
-        width:100%;
-        background-image:url(img/contact-bgr.jpg);
-        background-size: cover;
-        background-position: bottom;  
-        display:flex;
-        flex-direction: column;
-         align-items: center;
-         
-    }
-    
-    .contact-box{
-        width:460px;
-        height:560px;
-        background-color:rgb(238,235,235);
-         border-radius:15px;
-        padding:10px;
-        box-shadow: 3px 3px 8px 8px rgba(0 ,0 ,0 ,0.4);
-        color:black;
-    }
-    
-    form{
-        width:400px;
-        height:600px;
-        padding:12px;
-        display: flex;
-        flex-direction: column;
-        border-color: rgb(228, 228, 228);
-        border-radius: 15px;
-        
-    }
-    
-    input{
-        padding:10px;
-        height:40px;
-        border: none;
-        border-radius: 10px;
-        margin-bottom: 10px;
-        font-size:18px;
-        margin-left:38px;
-    }
-    
-    textarea{
-        border-radius: 10px;
-        font-size: 18px;
-        margin-left: 38px;
-        padding-top: 10px;
-        padding-left: 10px;
-        border: none;
-    }
-    
-    .submit-btn{
-        width: 212px;
-        height: 50px;
-        border-radius: 10px;
-        border: none;
-        margin-top: 57px;
-        margin-left: 105px;
-        background-color:rgb(0,128,0);
-        font-size: 20px;
-        font-weight: 600;
-        color:white;
-    }
-    
-    .submit-btn:hover{
-        cursor: pointer;
-        background-color:rgb(7, 99, 7);
-        border-style:1px solid white;
-        box-shadow: 7px -7px 10px 4px rgba(135, 156, 135, 0.8);
-    }
-    
-    
-    @media(max-width:560px){
-          h1{
-            font-size: 35px;   
-          }
-    
-          .contact-box{
-            width: 335px;
-            height: 455px;
-          }
-    
-          h3{
-            font-size: 20px;
-          }
-    
-          form{
-            width: 272px;
-            height: 360px;
-            padding: 10px;
-          }
-    
-          textarea{
-            width: 223px;
-            height: 150px;
-          }
-    
-          .submit-btn{
-            width: 150px;
-            margin-top: 30px;
-            margin-left: 80px;
-          }
-    
-    }
-    
-    @media(max-width:450px){
-        .contact-box{
-            width: 255px;
-            height: 400px;
-        }
-    
-        form{
-            padding: 0;
-        }
-    
-        textarea{
-            width: 166px;
-            font-size: 15px;
-        }
-    
-        .submit-btn{
-            margin-top: 20px;
-            margin-left: 55px;
-            height: 40px;
-            font-size: 15px;
-        }
-    
-        input{
-            width: 158px;
-            height: 20px;
-            font-size: 15px;
-        }
-    }
-    
-    
-    
-    
-    
-      
-}
-
 body {
     margin: 0;
+    overflow-x: hidden;
+    font-family: 'Raleway', sans-serif;
+}
+
+.contact-h1 {
+    font-size: 65px;
+    font-weight: bold;
+    color: white;
+}
+
+.contact-h3 {
+    font-size: 30px;
+    text-align: center;
+    color: black;
+}
+.amount-calc {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+.main-box {
+    height: 120vh;
+    width: 100%;
+    background-image: url(img/contact-bgr.jpg);
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.contact-box {
+    width: 460px;
+    height: 560px;
+    background-color: rgb(238, 235, 235);
+    border-radius: 15px;
+    padding: 10px;
+    box-shadow: 3px 3px 8px 8px rgba(0, 0, 0, 0.4);
+    color: black;
+}
+
+form {
+    width: 400px;
+    height: 600px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    border-color: rgb(228, 228, 228);
+    border-radius: 15px;
+
+}
+#user-input {
+    height: 10px;
+}
+input {
+    padding: 10px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    margin-left: 38px;
+}
+
+textarea {
+    border-radius: 10px;
+    font-size: 18px;
+    margin-left: 38px;
+    padding-top: 10px;
+    padding-left: 10px;
+    border: none;
+}
+
+.submit-btn {
+    width: 212px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 57px;
+    margin-left: 105px;
+    background-color: rgb(0, 128, 0);
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+}
+
+.submit-btn:hover {
+    cursor: pointer;
+    background-color: rgb(7, 99, 7);
+    border-style: 1px solid white;
+    box-shadow: 7px -7px 10px 4px rgba(135, 156, 135, 0.8);
+}
+
+.main {
+    width: 80%;
+    padding-left: 150px;
+}
+
+.headline {
+    width: 100%;
+
+}
+
+.headline img {
+    border-radius: 10px;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.recipe-h1 {
+    padding: 2px;
+    margin-bottom: 20px;
+    font-size: 35px;
+}
+
+.icons-main {
+    display: flex;
+    gap: 25px;
+    margin-top: 25px;
+}
+
+.icon-sub {
+    height: 20px;
+    background-color: rgb(238, 235, 235);
+    border-radius: 10px;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+}
+
+.icon-sub img {
+    height: 20px;
+    width: 20px;
+    object-fit: cover;
+}
+
+.vertical-line {
+    width: 100%;
+    height: 2px;
+    margin-top: 90px;
+    background-color: rgb(238, 235, 235);
+}
+
+.ingridients {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+
+}
+
+.ingridients input {
+    height: 36px;
+    font-size: 17px;
+}
+
+.recipe-button {
+    height: 42px;
+    width: 200px;
+    padding: 8px 8px 8px;
+    color: #faf8f8;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    background-color: #008000;
+    transition: all ease-in-out 0.2s;
+}
+
+.recipe-button:hover {
+    background-color: #004b00;
+    cursor: pointer;
+}
+
+table {
+    display: inline-grid;
+    width: 100%;
+    margin-top: 25px;
+    border-radius: 10px;
+}
+
+table body {
+    width: 100%;
+    display: inline-grid;
+}
+
+table tr {
+    padding: 15px;
+    display: block;
+}
+
+table tr:nth-child(odd) {
+    background-color: rgb(238, 235, 235);
+    border-radius: 10px;
+}
+
+.recipe-h3 {
+    font-size: 25px;
+}
+
+.nutrition {
+    font-size: 17px;
+}
+
+.recipe-p {
+    margin-top: 25px;
+}
+
+.recipe-h4 {
+    margin-top: 45px;
+    font-size: 20px;
+}
+
+.author {
+    display: flex;
+    font-weight: bold;
+    align-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 30px;
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+
+.author img {
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+header {
+    height: 90px;
+    background-color: 0;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 150px;
+    box-shadow: 0 8px 4px -4px rgb(65 65 65 / 20%);
+    font-family: 'Raleway', sans-serif;
+}
+
+header img {
+    margin-top: 20px;
+}
+
+.logo-head {
+    height: 60px;
+}
+
+.nav-header {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-right: 200px;
+    margin: 90px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.nav-header a {
+    color: black;
+    text-decoration: none;
+    margin-left: 15px;
+    font-family: 'Raleway', sans-serif;
+    transition: all ease-in-out 0.2s;
+}
+
+.nav-header a:hover {
+    text-decoration: none;
+    color: #008000;
 }
 
 .bg1 {
@@ -298,6 +411,125 @@ body {
     text-align: center;
 }
 
+footer {
+    background-color: #383838;
+    display: flex;
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 160px;
+    padding-right: 160px;
+    padding-top: 10px;
+}
+
+
+.footer_img {
+    filter: invert(80%);
+}
+
+.footer_img img {
+    height: 70px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 50px;
+}
+
+@media screen and (min-width: 1121px) {
+
+    .nav-mobile {
+        display: none;
+    }
+
+    .mobile-burger {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1120px) {
+
+    header {
+        padding-left: 0;
+        justify-content: space-around;
+    }
+
+    .burger {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 16px;
+    }
+
+    .burger a {
+        margin-top: 16px;
+        margin-bottom: 16px;
+        padding: 8px 128px 8px;
+        text-decoration: none;
+        color: #383838;
+        border: none;
+        transition: all ease-in-out 0.3s;
+    }
+
+    .burger a:hover {
+        cursor: pointer;
+        color: #B48A4E;
+        background-color: gray;
+
+    }
+
+    .burger button {
+        width: 300px;
+        margin-top: 32px;
+        padding: 8px 8px 8px;
+        color: #faf8f8;
+        text-decoration: none;
+        border-radius: 5px;
+        border: none;
+        background-color: #008000;
+        transition: all ease-in-out 0.2s;
+    }
+
+    .burger button:hover {
+        background-color: #004b00;
+        cursor: pointer;
+    }
+
+    .nav-header {
+        display: none;
+    }
+
+    .mobile-burger {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+    }
+
+    .nav-mobile {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        width: 500px;
+        height: 100vh;
+        background-color: white;
+        border-left: 1px solid black;
+        translate: 501px;
+        transition: all 255ms ease-in-out;
+    }
+
+    .showOverlayMenu {
+        translate: 0;
+    }
+
+}
+
 @media (max-width: 1070px) {
     .bg1 {
         height: 600px;
@@ -361,6 +593,133 @@ body {
         padding-bottom: 16px;
         padding-left: 50px;
         padding-right: 50px;
+    }
+}
+
+@media (max-width:800px) {
+    .main {
+        width: 65%;
+        padding-left: 90px;
+    }
+
+}
+@media(max-width:560px) {
+    .contact-h1 {
+        font-size: 35px;
+    }
+
+    .contact-box {
+        width: 335px;
+        height: 455px;
+    }
+
+    .contact-h3 {
+        font-size: 20px;
+    }
+
+    form {
+        width: 272px;
+        height: 360px;
+        padding: 10px;
+    }
+
+    textarea {
+        width: 223px;
+        height: 150px;
+    }
+
+    .submit-btn {
+        width: 150px;
+        margin-top: 30px;
+        margin-left: 80px;
+    }
+
+}
+
+@media(max-width:500px) {
+
+    .main{
+        font-size: 12px;
+        padding-left: 65px;
+    }
+    .recipe-h1 {
+        font-size: 23px;
+    }
+
+    .icons-main {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .ingridients {
+        width: 80%;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+        padding-left: 25px;
+    }
+
+    .ingridients input {
+        font-size: 12px;
+    }
+
+    table tr {
+        padding: 8px;
+        display: block;
+    }
+
+
+    tbody {
+        width: 80%;
+        display: inline-grid;
+    }
+
+    td {
+        width: 80%;
+    }
+
+    table tr:nth-child(odd) {
+        width: 80%;
+    }
+
+    table tr:nth-child(even) {
+        width: 80%;
+    }
+
+    .nutrition {
+        font-size: 13px;
+    }
+
+
+}
+
+@media(max-width:450px) {
+    .contact-box {
+        width: 255px;
+        height: 400px;
+    }
+
+    form {
+        padding: 0;
+    }
+
+    textarea {
+        width: 166px;
+        font-size: 15px;
+    }
+
+    .submit-btn {
+        margin-top: 20px;
+        margin-left: 55px;
+        height: 40px;
+        font-size: 15px;
+    }
+
+    input {
+        width: 158px;
+        height: 20px;
+        font-size: 15px;
     }
 }
 

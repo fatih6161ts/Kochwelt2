@@ -14,60 +14,57 @@
         rel="stylesheet">
     <link rel="icon" type="image/png" sizes="32x32" href="img/logo_small.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/logo_small.png">
-    <link rel="stylesheet" href="style-recipe.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 
 </head>
 
-<body>
+<body onload="includeHTML()">
+    <div w3-include-html="templates/header.html"></div>
     <div class="main">
         <div class="headline">
             <h1>Rote Linsen-Kokos-Suppe</h1>
-            <img src="img/rote-linsen-kokos-suppe.jpg">
+            <img src="img/suppe.jpg">
         </div>
         <div class="icons-main">
-            <div class="icon-sub"><img src="img/clock.png">120 Min.</div>
-            <div class="icon-sub"><img src="img/brain.png">simpel</div>
-            <div class="icon-sub"><img src="img/calendar.png">27.03.2023</div>
+            <div class="icon-sub"><img src="img/icons/clock-regular.svg">120 Min.</div>
+            <div class="icon-sub"><img src="img/icons/brain-solid.svg">simpel</div>
+            <div class="icon-sub"><img src="img/icons/calendar-alt-regular.svg">27.03.2023</div>
         </div>
         <div class="vertical-line"></div>
-        <div class="ingridients">Zutaten für <input type="number" placeholder="4" min="1"><button class="button"
-                type="submit">Portionen</button></div>
-
+        <div class="amount-calc">
+            <p>Zutaten für</p>
+            <input id="user-input" type="number" min="1" max="10" placeholder="1" />
+            <button onclick="changeAmount_1()" id="change-amount-btn" class="button body">
+                Portionen
+            </button>
+        </div>
         <table>
             <tr>
-                <td>1 Dose</td>
-                <td>Pizzatomaten (400 g)</td>
+                <td id="ing-1" data-amount="1">1 Dose Pizzatomaten</td>
             </tr>
             <tr>
-                <td>1 Dose</td>
-                <td>Kokosmilch (400 g)</td>
+                <td id="ing-2" data-amount="1">1 Dose Kokosmilch</td>
             </tr>
             <tr>
-                <td>1</td>
-                <td>Zwiebel(n)</td>
+                <td id="ing-3" data-amount="1">1 Zwiebel(n)</td>
             </tr>
             <tr>
-                <td>175 g</td>
-                <td>Linsen, rote</td>
+                <td id="ing-4" data-amount="175">175 g Linsen, Rote</td>
             </tr>
             <tr>
-                <td>3 TL</td>
-                <td>Chilipulver</td>
+                <td id="ing-5" data-amount="3">3 TL Chilipulver</td>
             </tr>
             <tr>
-                <td>2 El</td>
-                <td>Kurkuma</td>
+                <td id="ing-6" data-amount="2">2 El Kurkuma</td>
             </tr>
             <tr>
-                <td>600 ml</td>
-                <td>Gemüsebrühe</td>
+                <td id="ing-7" data-amount="600">600 ml Gemüsebrühe</td>
             </tr>
             <tr>
-                <td></td>
                 <td>Sonnenblumenöl</td>
             </tr>
             <tr>
-                <td></td>
                 <td>Salz</td>
             </tr>
         </table>
@@ -84,19 +81,20 @@
         </p>
         <h3>Zubereitung</h3>
         <div class="icons-main">
-            <div class="icon-sub"><img src="img/clock.png">25 Minuten</div>
-            <div class="icon-sub"><img src="img/complete.png">Gesamtzeit ca. 2 Std. 30 Minuten</div>
+            <div class="icon-sub"><img src="img/icons/clock-regular.svg">25 Minuten</div>
+            <div class="icon-sub"><img src="img/icons/clock-regular.svg">Gesamtzeit ca. 2 Std. 30 Minuten</div>
         </div>
-        <p> Die Zwiebeln schälen und in feine Würfel schneiden. Im Sonnenblumenöl glasig anschwitzen. 
-            Rote Linsen, Tomaten mit Saft und Kokosmilch hinzufügen und gut umrühren. 
+        <p> Die Zwiebeln schälen und in feine Würfel schneiden. Im Sonnenblumenöl glasig anschwitzen.
+            Rote Linsen, Tomaten mit Saft und Kokosmilch hinzufügen und gut umrühren.
             Mit der Gemüsebrühe aufgießen und die Suppe ca. 20 Minuten köcheln.
             Zum Schluss mit Salz, Chili- und Kurkumapulver abschmecken.
             Die Suppe schmeckt am nächsten Tag doppelt so gut. Dazu passen Garnelenspieße und Baguette.</p>
 
-            <h4>Rezept erstellt von</h4>
-            <div class="author"><img src="img/IMG_1309.JPG" >Dominik</div>
+        <h4>Rezept erstellt von</h4>
+        <div class="author"><img src="img/profile.png">Fatih</div>
 
     </div>
+    <div w3-include-html="templates/footer.html"></div>
 </body>
 
 </html>

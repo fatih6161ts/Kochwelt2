@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"Croissant"</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body onload="includeHTML()">
+    <div w3-include-html="templates/header.html"></div>
+    <div class="main">
+        <div class="headline">
+            <h1 id="recipe-h1">Französische Croissants</h1>
+            <img src="img/croissant.jpg">
+        </div>
+        <div class="icons-main">
+            <div class="icon-sub"><img src="img/icons/clock-regular.svg">30 Min.</div>
+            <div class="icon-sub"><img src="img/icons/brain-solid.svg">normal</div>
+            <div class="icon-sub"><img src="img/icons/calendar-alt-regular.svg">29.03.2023</div>
+        </div>
+        <div class="vertical-line"></div>
+        <div class="amount-calc">
+            <p>Zutaten für</p>
+            <input id="user-input" type="number" min="1" max="10" placeholder="1" />
+            <button onclick="changeAmount_1()" id="change-amount-btn" class="button body">
+                Portionen
+            </button>
+        </div>
+        <table>
+            <tr>
+                <td id="ing-1" data-amount="330">330 g Mehl</td>
+            </tr>
+            <tr>
+                <td id="ing-2" data-amount="150">150 ml Milch</td>
+
+            </tr>
+            <tr>
+                <td id="ing-3" data-amount="25">25 g Margarine</td>
+            </tr>
+            <tr>
+                <td id="ing-4" data-amount="10">10 g Zucker</td>
+            </tr>
+            <tr>
+                <td id="ing-5" data-amount="1">1 Ei(er)</td>
+            </tr>
+            <tr>
+                <td id="ing-6" data-amount="1">1 Eigelb</td>
+            </tr>
+            <tr>
+                <td id="ing-7" data-amount="20">20 g Hefe</td>
+            </tr>
+            <tr>
+                <td id="ing-8" data-amount="4">4 g Salz</td>
+            </tr>
+            <tr>
+                <td id="ing-9" data-amount="1">1 TL Zitrone(n) - Schale, gerieben</td>
+            </tr>
+            <tr>
+                <td id="ing-10" data-amount="1">1 Msp. Vanille</td>
+            </tr>
+            <tr>
+                <td id="ing-11" data-amount="150">150 g Butter</td>
+            </tr>
+            <tr>
+                <td>Mehl für die Arbeitsfläche</td>
+            </tr>
+            <tr>
+                <td>Wasser</td>
+            </tr>
+        </table>
+        <p class="nutrition">
+            <b> Nährwerte pro Portion
+                kcal
+                2900 |
+                Eiweiß
+                60,31 g |
+                Fett
+                166,46 g |
+                Kohlenhydr.
+                287,99 g</b>
+        </p>
+        <h3 class="recipe-h3">Zubereitung</h3>
+        <div class="icons-main">
+            <div class="icon-sub"><img src="img/icons/clock-regular.svg">Arbeitszeit ca. 1 Stunde 30 Minuten</div>
+            <div class="icon-sub"><img src="img/icons/clock-regular.svg">Ruhezeit ca. 12 Stunden</div>
+            <div class="icon-sub"><img src="img/icons/clock-regular.svg">Gesamtzeit ca. 13 Std. 30 Minuten</div>
+        </div>
+        <p class="recipe-p">
+            Milch erwärmen, Zucker und Hefe unter Rühren darin auflösen. Hefemilch, Mehl, Salz, Eigelb, Ei, Zitronenschale, 
+            Vanille und Margarine zu einem geschmeidigen Teig verarbeiten. Dann abgedeckt über Nacht im Kühlschrank 
+            gehen lassen.
+
+            Die Butter zwischen Klarsichtfolie ca. 30 x 15 cm ausrollen und kühlstellen.
+
+            Den Hefeteig auf der bemehlten Arbeitsfläche kreuzförmig einschneiden. So ausrollen, dass ein Kreuz entsteht. 
+            Die Butterplatte in die Mitte legen. Die Teigkanten mit etwas Wasser bestreichen. Die Teiglappen über die 
+            Butterplatte legen, sodass diese vollständig eingehüllt ist. Den Teig rundherum leicht andrücken und 15 Minuten 
+            kalt stellen.
+
+            Den Teigblock auf der bemehlten Arbeitsfläche auf etwa 50 x 30 cm ausrollen. Ein Teigdrittel zur Mitte hin einschlagen, 
+            das andere Drittel darüberlegen. 20 Minuten kalt stellen.
+
+            Ausrollen, Einschlagen und Kaltstellen einmal wiederholen (einfache Tour). Nun dem Teig noch eine doppelte Tour geben, 
+            d.h. die rechte und die linke Teigkante bis zur Mitte hin einschlagen, sodass sie in der Mitte aneinander stoßen. 
+            Nach dieser Tour sollte der Teig mindestens 30 Minuten im Kühlschrank entspannen.
+
+
+            Den Teig auf der bemehlten Arbeitsfläche auf ca. 60 x 20 cm ausrollen. Aus der Platte 8 gleichgroße Dreiecke schneiden. 
+            An der Schmalseite in der Mitte jeweils 2 cm tief einschneiden, um die Hörnchen besser biegen zu können.
+
+
+            Die Dreiecke von der Schmalseite her zu Hörnchen aufrollen, dabei die Teigspitzen leicht andrücken. Auf ein mit Backpapier 
+            belegtes Backblech setzen. Ca. 30 Minuten gehen lassen, nach 20 Minuten die Croissants mit dem verquirlten Eigelb bestreichen.
+
+            Im vorgeheizten Backofen auf der 2. Einschubleiste von unten bei 210 Grad 15-18 Minuten backen 
+            (Gas 3-4, Umluft ca. 15 Minuten bei 190 Grad). Aus dem Ofen nehmen und leicht abkühlen lassen. 
+        </p>
+
+        <h4 class="recipe-h4">Rezept erstellt von</h4>
+        <div class="author"><img src="img/profile.png">Jonas</div>
+
+    </div>
+    <div w3-include-html="templates/footer.html"></div>
+</body>
+
+</html>

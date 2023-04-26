@@ -1,19 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
+    
 </head>
 
-
-<body>
-    <h1>Hallo Test</h1>
+<body onload="includeHTML()">
+    <div w3-include-html="templates/header.html"></div>
     <div class="bg1">
         <div class="bg1-inner">
             <div class="inner-l">
@@ -23,25 +22,25 @@
                 <h2>Französische Croissants</h2>
                 <p>Schmackhafte Croissants kännen auch zu Hause sehr einfach gebacken werden. Mit ca 30. Minuten Aufwand
                     kannst du ein wundervolles Frühstück zaubern.</p>
-                <a href="#" class="button">Rezept Öffnen</a>
+                <a href="croissant.html" class="button">Rezept Öffnen</a>
             </div>
         </div>
 
     </div>
     <div class="bg2">
-        <h2>Lust auf was Neues????sadsaül,düawd</h2>
+        <h2>Lust auf was Neues?</h2>
         <div class="bg2_inner">
             <div class="1">
-                <a href="#"><img src="img/croissant.jpg"></a>
-                <p>Frische Croissants</p>
+                <a href="suppe.html"><img src="img/suppe.jpg"></a>
+                <p>Rote Linsen Linsen-Kokos-Suppe</p>
             </div>
             <div class="2">
-                <a href="#"><img src="img/croissant.jpg"></a>
-                <p>Frische Croissants</p>
+                <a href="gulash.html"><img src="img/Gulasch.jpg"></a>
+                <p>Szegedinar Gulash</p>
             </div>
             <div class="3">
-                <a href="#"><img src="img/croissant.jpg"></a>
-                <p>Frische Croissants</p>
+                <a href="lasagne.html"><img src="img/lasagne.jpg"></a>
+                <p>Lasagne Bolognese</p>
             </div>
         </div>
     </div>
@@ -54,11 +53,12 @@
             <div class="inner-2r">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam quis perferendis aspernatur
                     laudantium eum sequi, saepe, id excepturi amet commodi tenetur modi maiores, culpa minima? Explicabo
-                    cumque sunt esse nonsadawdsadasdsadws?</p>
+                    cumque sunt esse non?</p>
             </div>
         </div>
 
     </div>
+    <div w3-include-html="templates/footer.html"></div>
 </body>
 
 </html>

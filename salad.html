@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"Rezept des Tages"</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body onload="includeHTML()">
+    <div w3-include-html="templates/header.html"></div>
+    <div class="main">
+        <div class="headline">
+            <h1 id="recipe-h1">Griechischer Bauernsalat</h1>
+            <img src="img/salad.jpg">
+        </div>
+        <div class="icons-main">
+            <div class="icon-sub"><img src="img/icons/clock-regular.svg">15 Min.</div>
+            <div class="icon-sub"><img src="img/icons/brain-solid.svg">simpel</div>
+            <div class="icon-sub"><img src="img/icons/calendar-alt-regular.svg">29.03.2023</div>
+        </div>
+        <div class="vertical-line"></div>
+        <div class="amount-calc">
+            <p>Zutaten für</p>
+            <input id="user-input" type="number" min="1" max="10" placeholder="1" />
+            <button onclick="changeAmount_1()" id="change-amount-btn" class="button body">
+                Portionen
+            </button>
+        </div>
+        <table>
+            <tr>
+                <td id="ing-1" data-amount="1">1 Salzgurke</td>
+            </tr>
+            <tr>
+                <td id="ing-2" data-amount="2">2 Paprikaschot(en), rot und grün</td>
+
+            </tr>
+            <tr>
+                <td id="ing-3" data-amount="500">500 g Tomate(n)</td>
+            </tr>
+            <tr>
+                <td id="ing-4" data-amount="2">2 Zwiebel(n)</td>
+            </tr>
+            <tr>
+                <td id="ing-5" data-amount="200">200 g Schafskäse</td>
+            </tr>
+            <tr>
+                <td id="ing-6" data-amount="1">1 Glas Oliven, schwarze</td>
+            </tr>
+            <tr>
+                <td id="ing-7" data-amount="1">1 Zitrone(n)</td>
+            </tr>
+            <tr>
+                <td id="ing-8" data-amount="125">125ml Olivenöl</td>
+            </tr>
+            <tr>
+                <td>Salz und Pfeffer</td>
+            </tr>
+            <tr>
+                <td>Oregano</td>
+            </tr>
+        </table>
+        <p class="nutrition">
+            <b> Nährwerte pro Portion
+                kcal
+                270 |
+                Eiweiß
+                9,93 g |
+                Fett
+                22,66 g |
+                Kohlenhydr.
+                6,21 g</b>
+        </p>
+        <h3 class="recipe-h3">Zubereitung</h3>
+        <div class="icons-main">
+            <div class="icon-sub"><img src="img/icons/clock-regular.svg">ca. 15 Minuten</div>
+            <div class="icon-sub"><img src="img/icons/clock-regular.svg">Gesamtzeit ca. 15 Minuten</div>
+        </div>
+        <p class="recipe-p">
+            Gurke waschen und ungeschält in dünne oder Stücke schneiden. Paprika waschen, entkernen und in dünne Streifen schneiden.
+            Tomaten waschen und achteln. Zwiebeln schälen und in feine Ringe schneiden. Schafskäse würfeln und mit Oregano bestreuen.
+            Oliven abgießen und mit Gurke, Paprika, Tomaten, Zwiebeln und Schafskäse in eine Schüssel geben. Olivenöl, Zitronensaft,
+            Salz und Pfeffer zu einer Sauce verrühren und über den Salat gießen. Umrühren
+
+        </p>
+
+        <h4 class="recipe-h4">Rezept erstellt von</h4>
+        <div class="author"><img src="img/profile.png">Junus</div>
+
+    </div>
+    <div w3-include-html="templates/footer.html"></div>
+</body>
+
+</html>

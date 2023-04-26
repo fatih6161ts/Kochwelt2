@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kochwelt - Kontakt</title>
+    <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
@@ -14,13 +15,14 @@
 
 </head>
 
-<body class="kontakt">
+<body onload="includeHTML()">
+    <div w3-include-html="templates/header.html"></div>
     <div class="main-box">
 
-        <h1>Kontakt</h1>
+        <h1 class="contact-h1">Kontakt</h1>
 
         <div class="contact-box">
-            <h3>Schreibe uns einfach an </h3>
+            <h3 class="contact-h3">Schreibe uns einfach an </h3>
 
             <form action="http://gruppenarbeit-481kochwelt.developerakademie.net/" method="post">
 
@@ -38,7 +40,7 @@
 
     </div>
 
-
+    <div w3-include-html="templates/footer.html"></div>
 
 </body>
 
